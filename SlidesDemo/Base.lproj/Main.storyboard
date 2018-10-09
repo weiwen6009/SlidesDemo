@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlidesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ba1-L9-gzP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="g7t-yE-pN8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Sk9-3E-R9y">
+                                        <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="tIn-IM-rrB">
+                                        <rect key="frame" x="750" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Qt5-RH-0ze">
+                                        <rect key="frame" x="1125" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="g7t-yE-pN8" firstAttribute="width" secondItem="Ba1-L9-gzP" secondAttribute="width" id="4lw-VE-lIw"/>
+                                    <constraint firstItem="tIn-IM-rrB" firstAttribute="width" secondItem="Ba1-L9-gzP" secondAttribute="width" id="5AM-wF-paB"/>
+                                    <constraint firstItem="g7t-yE-pN8" firstAttribute="top" secondItem="Ba1-L9-gzP" secondAttribute="top" id="5Me-D3-GaH"/>
+                                    <constraint firstItem="Sk9-3E-R9y" firstAttribute="top" secondItem="Ba1-L9-gzP" secondAttribute="top" id="90Q-gN-G6X"/>
+                                    <constraint firstAttribute="bottom" secondItem="tIn-IM-rrB" secondAttribute="bottom" id="90V-pc-Vme"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qt5-RH-0ze" secondAttribute="trailing" id="EbY-xu-DW4"/>
+                                    <constraint firstItem="Sk9-3E-R9y" firstAttribute="width" secondItem="Ba1-L9-gzP" secondAttribute="width" id="IG3-eO-cg1"/>
+                                    <constraint firstItem="Qt5-RH-0ze" firstAttribute="leading" secondItem="tIn-IM-rrB" secondAttribute="trailing" id="IYV-EO-DHk"/>
+                                    <constraint firstItem="Qt5-RH-0ze" firstAttribute="width" secondItem="Ba1-L9-gzP" secondAttribute="width" id="MoY-wx-7cb"/>
+                                    <constraint firstItem="tIn-IM-rrB" firstAttribute="top" secondItem="Ba1-L9-gzP" secondAttribute="top" id="PeB-my-DA9"/>
+                                    <constraint firstItem="tIn-IM-rrB" firstAttribute="leading" secondItem="Sk9-3E-R9y" secondAttribute="trailing" id="QEj-sy-yjB"/>
+                                    <constraint firstItem="g7t-yE-pN8" firstAttribute="leading" secondItem="Ba1-L9-gzP" secondAttribute="leading" id="Rih-Zx-Tas"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sk9-3E-R9y" secondAttribute="bottom" id="XHH-OF-LgD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qt5-RH-0ze" secondAttribute="bottom" id="XxZ-VQ-6pg"/>
+                                    <constraint firstAttribute="bottom" secondItem="g7t-yE-pN8" secondAttribute="bottom" id="b7g-4J-dEl"/>
+                                    <constraint firstItem="Sk9-3E-R9y" firstAttribute="leading" secondItem="g7t-yE-pN8" secondAttribute="trailing" id="bKY-pm-DMU"/>
+                                    <constraint firstItem="tIn-IM-rrB" firstAttribute="height" secondItem="Ba1-L9-gzP" secondAttribute="height" id="dRY-wh-6b2"/>
+                                    <constraint firstItem="Sk9-3E-R9y" firstAttribute="height" secondItem="Ba1-L9-gzP" secondAttribute="height" id="h2l-dT-SWc"/>
+                                    <constraint firstItem="g7t-yE-pN8" firstAttribute="height" secondItem="Ba1-L9-gzP" secondAttribute="height" id="isx-0Z-g6d"/>
+                                    <constraint firstItem="Qt5-RH-0ze" firstAttribute="top" secondItem="Ba1-L9-gzP" secondAttribute="top" id="rle-eQ-kqb"/>
+                                    <constraint firstItem="Qt5-RH-0ze" firstAttribute="height" secondItem="Ba1-L9-gzP" secondAttribute="height" id="s6w-pR-xar"/>
+                                </constraints>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="CMz-cz-wk0">
+                                <rect key="frame" x="160" y="610" width="55" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ba1-L9-gzP" secondAttribute="trailing" id="B7W-eC-Tp9"/>
+                            <constraint firstAttribute="bottom" secondItem="Ba1-L9-gzP" secondAttribute="bottom" id="JYP-QK-lG2"/>
+                            <constraint firstItem="Ba1-L9-gzP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QYD-Wx-ov0"/>
+                            <constraint firstItem="Ba1-L9-gzP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="T7V-Kj-cKF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CMz-cz-wk0" secondAttribute="bottom" constant="20" id="mT7-Vl-nSM"/>
+                            <constraint firstItem="CMz-cz-wk0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="puA-5b-ChZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="CMz-cz-wk0" id="fz1-rD-xl6"/>
+                        <outlet property="scrollView" destination="Ba1-L9-gzP" id="iA6-27-pRY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="720" height="540"/>
+        <image name="2" width="450" height="600"/>
+        <image name="3" width="960" height="960"/>
+        <image name="4" width="720" height="960"/>
+    </resources>
+</document>
